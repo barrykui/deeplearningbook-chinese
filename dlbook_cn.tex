@@ -3,9 +3,13 @@
 
 % CJK related
 \usepackage[slantfont,boldfont]{xeCJK} 
-\setCJKmainfont[AutoFakeBold=true]{Adobe Song Std}
-\setCJKsansfont{Adobe Heiti Std}
-\setCJKmonofont{Adobe Fangsong Std}
+%\setCJKmainfont[AutoFakeBold=true]{Adobe Song Std}
+%\setCJKsansfont{Adobe Heiti Std}
+%\setCJKmonofont{Adobe Fangsong Std}
+
+\setCJKmainfont[ItalicFont=STKaiti]{STSong}
+\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+\setCJKmonofont{STFangsong}
 
 % Needed for some foreign characters
 \usepackage[T1]{fontenc}
@@ -74,18 +78,18 @@ plainpages=false]{hyperref}
 \newcommand{\NUMTEXT}[1]{\text{#1}}
 
 % Draft
-\usepackage{draftwatermark}
-\SetWatermarkText{DRAFT}
-\SetWatermarkLightness{0.9}
+%\usepackage{draftwatermark}
+%\SetWatermarkText{DRAFT}
+%\SetWatermarkLightness{0.9}
 \usepackage{background}
-\SetBgContents{仅供学习使用，不得用于商业目的。
-\url{https://github.com/exacity/deeplearningbook-chinese}}
+%\SetBgContents{仅供学习使用，不得用于商业目的。
+%\url{https://github.com/exacity/deeplearningbook-chinese}}
 \SetBgScale{1}
 \SetBgAngle{0}
-\SetBgOpacity{1}
-\SetBgColor{red}
-\SetBgPosition{current page.north}
-\SetBgVshift{-0.5cm}
+\SetBgOpacity{0}
+%\SetBgColor{red}
+%\SetBgPosition{current page.north}
+%\SetBgVshift{-0.5cm}
 
 \newif\ifOpenSource
 \OpenSourcetrue
